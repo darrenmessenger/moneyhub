@@ -19,6 +19,20 @@ app.get("/investments/:id", (req, res) => {
   })
 })
 
+app.post("/generate-csv", async (req, res) => {
+  try {
+    // Fetch the investments service to get the investments
+    // Fetch the companies service to get the companies
+    // Write a helper function to get the company name from the company id
+    // Convert the investments to CSV format
+    // Generate the CSV file
+    // Send the CSV file to the Export endpoint
+  } catch (e) {
+    console.error(e)
+    res.send(500)
+  }
+})
+
 app.listen(config.port, (err) => {
   if (err) {
     console.error("Error occurred starting the server", err)
