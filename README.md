@@ -79,3 +79,21 @@ Financial Companies - localhost:8082
 
 Admin - localhost:8083
 - `/investments/:id` get an investment record by id
+
+## Deliverable
+### New Routes
+There is a new route added to the admin service:
+Admin - localhost:8083
+- `/investments/generate-csv` generate a CSV report showing the values of all user investment holdings
+
+### New Scripts
+There is a unit test written using Jest. The test can be run using the following script:
+```bash
+npm test
+```
+
+### Additional Questions
+####  How might you make this service more secure?
+- 
+
+
