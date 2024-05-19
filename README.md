@@ -95,6 +95,8 @@ npm test
 
 ### Additional Questions
 ####  How might you make this service more secure?
-- 
+- Use rate limiting to control the amount of incoming requests to the server over a specified period.
+- Use HTTPS to encrypt data between the client and server, ensuring data integrity and security.
+- Use environment variables for configuration instead of a config file.
 
 
