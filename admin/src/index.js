@@ -84,14 +84,20 @@ app.post("/investments/generate-csv", async (req, res) => {
     
   } catch (e) {
     console.error(e)
-    res.send(500)
+    res.sendStatus(500)
   }
 })
 
-app.listen(config.port, (err) => {
-  if (err) {
-    console.error("Error occurred starting the server", err)
-    process.exit(1)
-  }
-  console.log(`Server running on port ${config.port}`)
-})
+if (require.main === module) {
+  const port = config.get('port') || 8083
+  
+  app.listen(port, (err) => {
+    if (err) {
+      console.error("Error occurred starting the server", err)
+      process.exit(1)
+    }
+    console.log(`Server running on port ${config.port}`)
+  });
+}
+
+module.exports = app;
