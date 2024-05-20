@@ -80,7 +80,7 @@ Financial Companies - localhost:8082
 Admin - localhost:8083
 - `/investments/:id` get an investment record by id
 
-## Deliverable
+## Deliverables
 ### New Routes
 There is a new route added to the admin service:
 
