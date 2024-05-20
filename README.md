@@ -99,4 +99,12 @@ npm test
 - Use HTTPS to encrypt data between the client and server, ensuring data integrity and security.
 - Use environment variables for configuration instead of a config file.
 
+### How would you make this solution scale to millions of records?
+- Switch from In-Memory Processing to Stream Processing as processing large amounts of data in memory can lead to memory issues.
+- Ensure that the database queries are optimized for performance, perhaps using indexes.
+
+### What else would you have liked to improve given more time?
+- I did have a look at Ramda.js and I can see the benefits, but I didn't have enough time to implement any changes to the code.
+- 
+
 
