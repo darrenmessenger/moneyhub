@@ -105,6 +105,9 @@ npm test
 
 ### What else would you have liked to improve given more time?
 - I did have a look at Ramda.js and I can see the benefits, but I didn't have enough time to implement any changes to the code.
-- 
+- I would have added more unit tests, for example test for invalid investment id, test for missing company data, test for error handling etc.
+- The 'request' library is depricated. I would have switched to 'axios'.
+- I would use modular functions by extracting logic into separate functions to make the code more organised.
+- I would have improved the error handling by providing more specific error messages.
 
 
