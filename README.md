@@ -80,21 +80,21 @@ Financial Companies - localhost:8082
 Admin - localhost:8083
 - `/investments/:id` get an investment record by id
 
-## Deliverables
-### New Routes
+# Deliverables
+## New Routes
 There is a new route added to the admin service:
 
 Admin - localhost:8083
 - `/investments/generate-csv` generate a CSV report showing the values of all user investment holdings
 
-### New Scripts
+## New Scripts
 There is a unit test written using Jest. The test can be run using the following script:
 ```bash
 npm test
 ```
 
-### Additional Questions
-####  How might you make this service more secure?
+## Additional Questions
+###  How might you make this service more secure?
 - Use rate limiting to control the amount of incoming requests to the server over a specified period.
 - Use HTTPS to encrypt data between the client and server, ensuring data integrity and security.
 - Use environment variables for configuration instead of a config file.
